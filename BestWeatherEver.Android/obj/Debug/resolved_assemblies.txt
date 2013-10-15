@@ -1,0 +1,2 @@
+/Users/jonasandersson/Projects/KOG/BestWeatherEver/BestWeatherEver.Android/bin/Debug/BestWeatherEver.Android.dll
+/Users/jonasandersson/Projects/KOG/BestWeatherEver/BestWeatherEver.Core/bin/Debug/BestWeatherEver.Core.dll

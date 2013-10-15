@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BestWeatherEver.Core/Resources/EmptyClass.cs">
+    <Files>
+      <File FileName="BestWeatherEver.Core/Resources/test.plist" />
+      <File FileName="BestWeatherEver.Core/Resources/EmptyClass.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="BestWeatherEver.Android" expanded="True" selected="True" />
+          <Node name="BestWeatherEver.Android.Core" expanded="True" />
+          <Node name="BestWeatherEver.iOS" expanded="True" />
+          <Node name="BestWeatherEver.iOS.Core" expanded="True">
+            <Node name="Resources" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BestWeatherEver.Android />
+</Properties>
