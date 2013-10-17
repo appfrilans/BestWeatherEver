@@ -1,0 +1,12 @@
+#Other
+.DS_Store
+tmp
+
+#Xamarin
+*.pidb
+*.userprefs
+*.swp
+*.DS_Store
+*.nib
+**/bin/**
+**/obj/**
