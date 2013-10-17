@@ -45,15 +45,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\.DS_Store" />
-    <None Include="Resources\AboutResources.txt" />
-    <None Include="Resources\test.plist" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Resources\EmptyClass.cs" />
-    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="YrNoManager.cs" />
   </ItemGroup>
 </Project>

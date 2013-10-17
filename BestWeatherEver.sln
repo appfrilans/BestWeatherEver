@@ -5,9 +5,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.iOS", "BestWeatherEver.iOS\BestWeatherEver.iOS.csproj", "{C7B8103C-8543-4A67-A737-D969E7CED7B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.iOS.Core", "BestWeatherEver.Core\BestWeatherEver.iOS.Core.csproj", "{1C899BBE-4558-4FE4-98ED-3132893DEEB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.Core.iOS", "BestWeatherEver.Core\BestWeatherEver.Core.iOS.csproj", "{1C899BBE-4558-4FE4-98ED-3132893DEEB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.Android.Core", "BestWeatherEver.Core\BestWeatherEver.Android.Core.csproj", "{7C8E3BEC-0BE2-4CDF-9632-EBAE34E1BB3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.Core.Android", "BestWeatherEver.Core\BestWeatherEver.Core.Android.csproj", "{7C8E3BEC-0BE2-4CDF-9632-EBAE34E1BB3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

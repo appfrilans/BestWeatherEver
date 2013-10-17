@@ -62,9 +62,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\BestWeatherEver.Core\BestWeatherEver.Android.Core.csproj">
+    <ProjectReference Include="..\BestWeatherEver.Core\BestWeatherEver.Core.Android.csproj">
       <Project>{7C8E3BEC-0BE2-4CDF-9632-EBAE34E1BB3B}</Project>
-      <Name>BestWeatherEver.Android.Core</Name>
+      <Name>BestWeatherEver.Core.Android</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

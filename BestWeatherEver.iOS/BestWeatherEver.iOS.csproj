@@ -107,9 +107,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\BestWeatherEver.Core\BestWeatherEver.iOS.Core.csproj">
+    <ProjectReference Include="..\BestWeatherEver.Core\BestWeatherEver.Core.iOS.csproj">
       <Project>{1C899BBE-4558-4FE4-98ED-3132893DEEB9}</Project>
-      <Name>BestWeatherEver.iOS.Core</Name>
+      <Name>BestWeatherEver.Core.iOS</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

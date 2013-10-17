@@ -2,9 +2,9 @@ using System;
 
 namespace BestWeatherEver.Core
 {
-	public class YrManager
+	public class YrNoManager
 	{
-		public YrManager ()
+		public YrNoManager ()
 		{
 		}
 	}
