@@ -62,11 +62,11 @@ namespace BestWeatherEver.Core
 		private WeatherData mapXMLToWeatherData (string xml)
 		{
 			XDocument doc = XDocument.Parse (xml);
-			var results = doc.Root.Descendants ("tabular")
+			var weatherList = doc.Root.Descendants ("time")
 				.Select (x => new WeatherData () {
-				//Type = x.Element ("symbol").Attribute ("number").Value,
-				//WindDirection = x.Element ("windDirection").Attribute ("code").Value,
-				//Temperature = x.Element ("windDirection").Attribute ("value").Value,
+				Type = x.Element ("symbol").Attribute ("number").Value,
+				WindDirection = x.Element ("windDirection").Attribute ("code").Value,
+				Temperature = x.Element ("temperature").Attribute ("value").Value,
 			});
 
 
@@ -79,7 +79,7 @@ namespace BestWeatherEver.Core
 			//weatherData.WindDirection = "ESE"; //(string)windDirection.Attribute ("code");
 			//weatherData.Temperature = "9"; //(string)windDirection.Attribute ("value");
 
-			return results.First ();
+			return weatherList.First ();
 		}
 	}
 }
