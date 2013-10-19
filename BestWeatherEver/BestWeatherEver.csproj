@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D1A275FF-3694-4F9C-90A6-6249117B39E1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{AF989030-EDD4-478E-92A2-6BBF86136F32}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <RootNamespace>BestWeatherEver</RootNamespace>
     <AssemblyName>BestWeatherEver</AssemblyName>
   </PropertyGroup>
@@ -28,16 +28,14 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Shared\WeatherData.cs" />
     <Compile Include="Shared\YrNoManager.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Net" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
   </ItemGroup>
 </Project>
