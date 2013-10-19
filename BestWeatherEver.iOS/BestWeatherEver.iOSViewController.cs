@@ -29,8 +29,8 @@ namespace BestWeatherEver.iOS
 		{
 			base.ViewDidLoad ();
 
-			//String weatherText = yrNoManager.FetchCurrentWeather ();
-			//weatherLabel.Text = weatherText;
+			String weatherText = yrNoManager.FetchCurrentWeather ();
+			weatherLabel.Text = weatherText;
 
 			// Perform any additional setup after loading the view, typically from a nib.
 		}

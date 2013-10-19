@@ -13,6 +13,7 @@ namespace BestWeatherEver.Core
 
 		public YrNoManager ()
 		{
+
 		}
 
 		public String FetchCurrentWeather ()
@@ -26,7 +27,7 @@ namespace BestWeatherEver.Core
 					return String.Format (@"Temp: {0} Wind: {1} Weather: {2}", lastFetchedWeatherData.Temperature, lastFetchedWeatherData.WindDirection, lastFetchedWeatherData.Type);
 				}
 			}
-			return "";
+			return "No data";
 		}
 
 		private String fetchXML ()
@@ -60,20 +61,25 @@ namespace BestWeatherEver.Core
 
 		private WeatherData mapXMLToWeatherData (string xml)
 		{
-			/*XDocument doc = XDocument.Parse (xml);
-			var result = doc.Root.Descendants ("tabular");
-			XElement firstWeather = result.First ();
+			XDocument doc = XDocument.Parse (xml);
+			var results = doc.Root.Descendants ("tabular")
+				.Select (x => new WeatherData () {
+				//Type = x.Element ("symbol").Attribute ("number").Value,
+				//WindDirection = x.Element ("windDirection").Attribute ("code").Value,
+				//Temperature = x.Element ("windDirection").Attribute ("value").Value,
+			});
 
-			XElement symbol = firstWeather.Element ("symbol");
-			XElement windDirection = firstWeather.Element ("windDirection");
-			XElement temperature = firstWeather.Element ("temperature");*/
 
-			WeatherData weatherData = new WeatherData ();
-			weatherData.Type = "9"; //symbol.Attribute ("number").Value;
-			weatherData.WindDirection = "ESE"; //(string)windDirection.Attribute ("code");
-			weatherData.Temperature = "9"; //(string)windDirection.Attribute ("value");
+			//XElement symbol = firstWeather.Element ("symbol");
+			//XElement windDirection = firstWeather.Element ("windDirection");
+			//XElement temperature = firstWeather.Element ("temperature");
 
-			return weatherData;
+			//WeatherData weatherData = new WeatherData ();
+			//weatherData.Type = "9"; //symbol.Attribute ("number").Value;
+			//weatherData.WindDirection = "ESE"; //(string)windDirection.Attribute ("code");
+			//weatherData.Temperature = "9"; //(string)windDirection.Attribute ("value");
+
+			return results.First ();
 		}
 	}
 }
