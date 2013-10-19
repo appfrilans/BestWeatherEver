@@ -19,15 +19,17 @@ namespace BestWeatherEver.Core
 		public String FetchCurrentWeather ()
 		{
 			String xml = fetchXML ();
-			if (xml != null)
+			if (xml == null)
 			{
-				lastFetchedWeatherData = mapXMLToWeatherData (xml);
-				if (lastFetchedWeatherData != null)
-				{
-					return String.Format (@"Temp: {0} Wind: {1} Weather: {2}", lastFetchedWeatherData.Temperature, lastFetchedWeatherData.WindDirection, lastFetchedWeatherData.Type);
-				}
+				return null;
 			}
-			return "No data";
+			lastFetchedWeatherData = mapXMLToWeatherData (xml);
+			if (lastFetchedWeatherData == null)
+			{
+				return null;
+			}
+
+			return String.Format (@"Temp: {0} Wind: {1} Weather: {2}", lastFetchedWeatherData.Temperature, lastFetchedWeatherData.WindDirection, lastFetchedWeatherData.Type);
 		}
 
 		private String fetchXML ()
@@ -53,8 +55,6 @@ namespace BestWeatherEver.Core
 						Console.Out.WriteLine ("Response Body: \r\n {0}", content);
 						return content;
 					}
-
-				
 				}
 			}
 		}
