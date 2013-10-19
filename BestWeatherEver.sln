@@ -76,6 +76,6 @@ Global
 		{D1A275FF-3694-4F9C-90A6-6249117B39E1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = BestWeatherEver.iOS\BestWeatherEver.iOS.csproj
+		StartupItem = BestWeatherEver.Android\BestWeatherEver.Android.csproj
 	EndGlobalSection
 EndGlobal

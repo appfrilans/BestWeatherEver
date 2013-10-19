@@ -13,7 +13,6 @@ namespace BestWeatherEver.Android
 	public class MainActivity : Activity
 	{
 		YrNoManager yrNoManager;
-		int count = 1;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -26,12 +25,8 @@ namespace BestWeatherEver.Android
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate
-			{
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
+			TextView weatherTextView = FindViewById<TextView> (Resource.Id.weatherLabel);
+			weatherTextView.Text = yrNoManager.FetchCurrentWeather ();
 		}
 	}
 }
