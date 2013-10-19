@@ -69,16 +69,6 @@ namespace BestWeatherEver.Core
 				Temperature = x.Element ("temperature").Attribute ("value").Value,
 			});
 
-
-			//XElement symbol = firstWeather.Element ("symbol");
-			//XElement windDirection = firstWeather.Element ("windDirection");
-			//XElement temperature = firstWeather.Element ("temperature");
-
-			//WeatherData weatherData = new WeatherData ();
-			//weatherData.Type = "9"; //symbol.Attribute ("number").Value;
-			//weatherData.WindDirection = "ESE"; //(string)windDirection.Attribute ("code");
-			//weatherData.Temperature = "9"; //(string)windDirection.Attribute ("value");
-
 			return weatherList.First ();
 		}
 	}
