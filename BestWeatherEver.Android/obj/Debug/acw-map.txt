@@ -1,1 +1,0 @@
-BestWeatherEver.Android.MainActivity;bestweatherever.android.MainActivity

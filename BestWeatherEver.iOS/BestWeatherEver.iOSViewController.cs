@@ -2,13 +2,17 @@ using System;
 using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using BestWeatherEver.Core;
 
 namespace BestWeatherEver.iOS
 {
 	public partial class BestWeatherEver_iOSViewController : UIViewController
 	{
+		YrNoManager yrNoManager;
+
 		public BestWeatherEver_iOSViewController (IntPtr handle) : base (handle)
 		{
+			yrNoManager = new YrNoManager ();
 		}
 
 		public override void DidReceiveMemoryWarning ()
@@ -24,7 +28,10 @@ namespace BestWeatherEver.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
+
+			//String weatherText = yrNoManager.FetchCurrentWeather ();
+			//weatherLabel.Text = weatherText;
+
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 

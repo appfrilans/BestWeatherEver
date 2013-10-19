@@ -1,18 +1,28 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BestWeatherEver.Core/YrNoManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BestWeatherEver.iOS/BestWeatherEver.iOSViewController.cs">
     <Files>
-      <File FileName="BestWeatherEver.Core/YrNoManager.cs" Line="7" Column="17" />
+      <File FileName="BestWeatherEver.iOS/BestWeatherEver.iOSViewController.cs" Line="19" Column="4" />
+      <File FileName="BestWeatherEver/Shared/YrNoManager.cs" Line="63" Column="6" />
+      <File FileName="BestWeatherEver/Shared/WeatherData.cs" Line="7" Column="21" />
+      <File FileName="BestWeatherEver.iOS/Main.cs" Line="16" Column="1" />
+      <File FileName="BestWeatherEver.Android/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="BestWeatherEver.Android/MainActivity.cs" Line="20" Column="3" />
+      <File FileName="BestWeatherEver.iOS/AppDelegate.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="BestWeatherEver.Android" expanded="True" />
-          <Node name="BestWeatherEver.Core.Android" expanded="True">
-            <Node name="YrNoManager.cs" selected="True" />
+          <Node name="BestWeatherEver" expanded="True">
+            <Node name="Shared" expanded="True" />
           </Node>
-          <Node name="BestWeatherEver.Core.iOS" expanded="True" />
-          <Node name="BestWeatherEver.iOS" expanded="True" />
+          <Node name="BestWeatherEver.Android" expanded="True">
+            <Node name="Shared" expanded="True" />
+          </Node>
+          <Node name="BestWeatherEver.iOS" expanded="True">
+            <Node name="Shared" expanded="True" />
+            <Node name="BestWeatherEver.iOSViewController.cs" selected="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
@@ -27,4 +37,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BestWeatherEver.Android MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
 </Properties>
