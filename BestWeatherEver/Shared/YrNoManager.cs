@@ -29,7 +29,7 @@ namespace BestWeatherEver.Core
 				return null;
 			}
 
-			return String.Format (@"Temp: {0} Wind: {1} Weather: {2}", lastFetchedWeatherData.Temperature, lastFetchedWeatherData.WindDirection, lastFetchedWeatherData.Type);
+			return String.Format (@"Temp: {0} Wind: {1} Weather: {2}", lastFetchedWeatherData.Temperature, lastFetchedWeatherData.WindDirectionString (), lastFetchedWeatherData.TypeString ());
 		}
 
 		private String fetchXML ()
