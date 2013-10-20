@@ -5,14 +5,64 @@
     android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/weatherImageView"
+        android:src="@drawable/cloudy"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="14.0dp" />
     <TextView
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/weatherLabel"
-        android:gravity="center"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="25dp" />
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="12.0dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/thermometer"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView1"
+            android:scaleType="centerInside"
+            android:layout_marginRight="6.7dp"
+            android:layout_marginLeft="4.7dp" />
+        <TextView
+            android:text="7°"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/degreeLabel"
+            android:layout_gravity="center_vertical"
+            android:gravity="center" />
+        <ImageView
+            android:src="@drawable/wind"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13.4dp"
+            android:layout_marginRight="6.7dp" />
+        <TextView
+            android:text="ESE"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/windLabel"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginRight="6.0dp" />
+    </LinearLayout>
 </LinearLayout>

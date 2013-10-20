@@ -45,7 +45,37 @@ namespace BestWeatherEver.Android
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int cloudy = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int day_rain = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int fog = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Icon = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int partly_cloudy = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int rain = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int snow = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int sun = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int thermometer = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int thunder = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int wind = 2130837514;
 			
 			static Drawable()
 			{
@@ -60,8 +90,26 @@ namespace BestWeatherEver.Android
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050004
+			public const int degreeLabel = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int imageView1 = 2131034115;
+			
+			// aapt resource value: 0x7f050005
+			public const int imageView2 = 2131034117;
+			
+			// aapt resource value: 0x7f050002
+			public const int linearLayout1 = 2131034114;
+			
 			// aapt resource value: 0x7f050000
-			public const int weatherLabel = 2131034112;
+			public const int weatherImageView = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int weatherLabel = 2131034113;
+			
+			// aapt resource value: 0x7f050006
+			public const int windLabel = 2131034118;
 			
 			static Id()
 			{

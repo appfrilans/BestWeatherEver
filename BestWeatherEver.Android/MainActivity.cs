@@ -9,7 +9,7 @@ using BestWeatherEver.Core;
 
 namespace BestWeatherEver.Android
 {
-	[Activity (Label = "BestWeatherEver.Android", MainLauncher = true)]
+	[Activity (Label = "BestWeatherEver", MainLauncher = true, Theme = "@android:style/Theme.Light.NoTitleBar")]
 	public class MainActivity : Activity
 	{
 		YrNoManager yrNoManager;
@@ -22,11 +22,18 @@ namespace BestWeatherEver.Android
 			SetContentView (Resource.Layout.Main);
 
 			yrNoManager = new YrNoManager ();
-
+			WeatherData weatherData = yrNoManager.FetchCurrentWeather ();
 			// Get our button from the layout resource,
 			// and attach an event to it
 			TextView weatherTextView = FindViewById<TextView> (Resource.Id.weatherLabel);
-			weatherTextView.Text = yrNoManager.FetchCurrentWeather ();
+			weatherTextView.Text = weatherData.TypeString ();
+
+			TextView windTextView = FindViewById<TextView> (Resource.Id.windLabel);
+			windTextView.Text = weatherData.WindDirectionString ();
+
+			TextView temperatureTextView = FindViewById<TextView> (Resource.Id.degreeLabel);
+			temperatureTextView.Text = weatherData.Temperature;
+
 		}
 	}
 }

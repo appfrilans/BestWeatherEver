@@ -69,6 +69,16 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\cloudy.png" />
+    <AndroidResource Include="Resources\drawable\day_rain.png" />
+    <AndroidResource Include="Resources\drawable\fog.png" />
+    <AndroidResource Include="Resources\drawable\partly_cloudy.png" />
+    <AndroidResource Include="Resources\drawable\rain.png" />
+    <AndroidResource Include="Resources\drawable\snow.png" />
+    <AndroidResource Include="Resources\drawable\sun.png" />
+    <AndroidResource Include="Resources\drawable\thermometer.png" />
+    <AndroidResource Include="Resources\drawable\thunder.png" />
+    <AndroidResource Include="Resources\drawable\wind.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

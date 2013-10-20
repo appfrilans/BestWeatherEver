@@ -31,11 +31,12 @@ namespace BestWeatherEver.iOS
 
 			// Perform any additional setup after loading the view, typically from a nib.
 			WeatherData weatherData = yrNoManager.FetchCurrentWeather ();
-			weatherImage.Image = UIImage.FromFile (weatherData.GetClimaconIconPath());
+			weatherImage.Image = UIImage.FromFile (weatherData.GetClimaconIconPath ());
 			thermometerImage.Image = UIImage.FromFile ("Climacons/thermometer.png");
 			thermometerLabel.Text = String.Format (@"{0}°", weatherData.Temperature);
 			windImage.Image = UIImage.FromFile ("Climacons/wind.png");
 			windLabel.Text = String.Format (@"{0}", weatherData.WindDirection);
+			weatherLabel.Text = weatherData.TypeString ();
 		}
 
 		public override void ViewWillAppear (bool animated)

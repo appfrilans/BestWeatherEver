@@ -1,24 +1,28 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BestWeatherEver/Shared/Helper.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="BestWeatherEver/Shared/WeatherData.cs" Line="23" Column="21" />
-      <File FileName="BestWeatherEver/Shared/YrNoManager.cs" Line="32" Column="132" />
-      <File FileName="BestWeatherEver.iOS/BestWeatherEver.iOSViewController.cs" Line="1" Column="1" />
-      <File FileName="BestWeatherEver/Shared/Helper.cs" Line="3" Column="31" />
+      <File FileName="BestWeatherEver/Shared/WeatherData.cs" Line="36" Column="13" />
+      <File FileName="BestWeatherEver.iOS/BestWeatherEver.iOSViewController.cs" Line="34" Column="63" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="BestWeatherEver" expanded="True" selected="True">
-            <Node name="References" expanded="True" />
-            <Node name="Shared" expanded="True" />
-          </Node>
           <Node name="BestWeatherEver.Android" expanded="True">
+            <Node name="Assets" expanded="True" />
+            <Node name="Properties" expanded="True" />
+            <Node name="Resources" expanded="True">
+              <Node name="drawable" expanded="True">
+                <Node name="fog.png" selected="True" />
+              </Node>
+              <Node name="layout" expanded="True" />
+            </Node>
             <Node name="Shared" expanded="True" />
           </Node>
           <Node name="BestWeatherEver.iOS" expanded="True">
-            <Node name="Shared" expanded="True" />
+            <Node name="Resources" expanded="True">
+              <Node name="Climacons" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -31,10 +35,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/jonasandersson/Projects/KOG/BestWeatherEver/BestWeatherEver/Shared/WeatherData.cs" line="28" column="1" />
-      <Breakpoint file="/Users/jonasandersson/Projects/KOG/BestWeatherEver/BestWeatherEver/Shared/WeatherData.cs" line="15" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.BestWeatherEver.Android MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5554" />

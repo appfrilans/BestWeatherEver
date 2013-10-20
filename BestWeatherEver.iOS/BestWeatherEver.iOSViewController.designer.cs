@@ -22,6 +22,9 @@ namespace BestWeatherEver.iOS
 		MonoTouch.UIKit.UIImageView weatherImage { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UILabel weatherLabel { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UIImageView windImage { get; set; }
 
 		[Outlet]
@@ -29,11 +32,6 @@ namespace BestWeatherEver.iOS
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (weatherImage != null) {
-				weatherImage.Dispose ();
-				weatherImage = null;
-			}
-
 			if (thermometerImage != null) {
 				thermometerImage.Dispose ();
 				thermometerImage = null;
@@ -44,6 +42,11 @@ namespace BestWeatherEver.iOS
 				thermometerLabel = null;
 			}
 
+			if (weatherImage != null) {
+				weatherImage.Dispose ();
+				weatherImage = null;
+			}
+
 			if (windImage != null) {
 				windImage.Dispose ();
 				windImage = null;
@@ -52,6 +55,11 @@ namespace BestWeatherEver.iOS
 			if (windLabel != null) {
 				windLabel.Dispose ();
 				windLabel = null;
+			}
+
+			if (weatherLabel != null) {
+				weatherLabel.Dispose ();
+				weatherLabel = null;
 			}
 		}
 	}
