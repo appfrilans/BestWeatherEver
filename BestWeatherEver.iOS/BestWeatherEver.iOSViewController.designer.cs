@@ -13,14 +13,45 @@ namespace BestWeatherEver.iOS
 	partial class BestWeatherEver_iOSViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UILabel weatherLabel { get; set; }
+		MonoTouch.UIKit.UIImageView thermometerImage { get; set; }
 
+		[Outlet]
+		MonoTouch.UIKit.UILabel thermometerLabel { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView weatherImage { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView windImage { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel windLabel { get; set; }
+		
 		void ReleaseDesignerOutlets ()
 		{
-			if (weatherLabel != null)
-			{
-				weatherLabel.Dispose ();
-				weatherLabel = null;
+			if (weatherImage != null) {
+				weatherImage.Dispose ();
+				weatherImage = null;
+			}
+
+			if (thermometerImage != null) {
+				thermometerImage.Dispose ();
+				thermometerImage = null;
+			}
+
+			if (thermometerLabel != null) {
+				thermometerLabel.Dispose ();
+				thermometerLabel = null;
+			}
+
+			if (windImage != null) {
+				windImage.Dispose ();
+				windImage = null;
+			}
+
+			if (windLabel != null) {
+				windLabel.Dispose ();
+				windLabel = null;
 			}
 		}
 	}
