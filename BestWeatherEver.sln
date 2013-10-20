@@ -76,6 +76,6 @@ Global
 		{C7B8103C-8543-4A67-A737-D969E7CED7B4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = BestWeatherEver.iOS\BestWeatherEver.iOS.csproj
+		StartupItem = BestWeatherEver.Android\BestWeatherEver.Android.csproj
 	EndGlobalSection
 EndGlobal

@@ -56,6 +56,9 @@
     <Compile Include="..\BestWeatherEver\Shared\YrNoManager.cs">
       <Link>Shared\YrNoManager.cs</Link>
     </Compile>
+    <Compile Include="..\BestWeatherEver\Shared\Helper.cs">
+      <Link>Shared\Helper.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

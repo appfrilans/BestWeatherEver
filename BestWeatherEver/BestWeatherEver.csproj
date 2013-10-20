@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{AF989030-EDD4-478E-92A2-6BBF86136F32}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>BestWeatherEver</RootNamespace>
+    <RootNamespace>BestWeatherEver.Core</RootNamespace>
     <AssemblyName>BestWeatherEver</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,5 +37,6 @@
   <ItemGroup>
     <Compile Include="Shared\WeatherData.cs" />
     <Compile Include="Shared\YrNoManager.cs" />
+    <Compile Include="Shared\Helper.cs" />
   </ItemGroup>
 </Project>
