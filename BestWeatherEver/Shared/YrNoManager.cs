@@ -16,7 +16,7 @@ namespace BestWeatherEver.Core
 
 		}
 
-		public WeatherData FetchCurrentWeather ()
+		public String FetchCurrentWeather ()
 		{
 			String xml = fetchXML ();
 			if (xml == null)
@@ -29,7 +29,7 @@ namespace BestWeatherEver.Core
 				return null;
 			}
 
-			return lastFetchedWeatherData;
+			return String.Format (@"Temp: {0} Wind: {1} Weather: {2}", lastFetchedWeatherData.Temperature, lastFetchedWeatherData.WindDirection, lastFetchedWeatherData.Type);
 		}
 
 		private String fetchXML ()
