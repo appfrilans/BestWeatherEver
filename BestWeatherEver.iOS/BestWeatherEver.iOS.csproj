@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\Climacons\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -116,4 +117,16 @@
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Climacons\cloudy.png" />
+    <BundleResource Include="Resources\Climacons\day_rain.png" />
+    <BundleResource Include="Resources\Climacons\fog.png" />
+    <BundleResource Include="Resources\Climacons\partly_cloudy.png" />
+    <BundleResource Include="Resources\Climacons\rain.png" />
+    <BundleResource Include="Resources\Climacons\snow.png" />
+    <BundleResource Include="Resources\Climacons\sun.png" />
+    <BundleResource Include="Resources\Climacons\thermometer.png" />
+    <BundleResource Include="Resources\Climacons\thunder.png" />
+    <BundleResource Include="Resources\Climacons\wind.png" />
+  </ItemGroup>
 </Project>
