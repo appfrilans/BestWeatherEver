@@ -71,4 +71,31 @@
             android:gravity="center"
             android:layout_marginRight="6.0dp" />
     </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout2"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+        <TextView
+            android:text="Väderprognos från yr.no, levererat av Meteorologisk institutt och NRK"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:gravity="center" />
+        <ImageButton
+            android:src="@drawable/Yr_logo"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:id="@+id/yrNoButton"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_marginTop="6.0dp"
+            android:layout_marginBottom="9.3dp" />
+    </LinearLayout>
 </LinearLayout>

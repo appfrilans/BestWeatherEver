@@ -1,14 +1,12 @@
 using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
 using BestWeatherEver.Core;
 using Android.Graphics.Drawables;
+using Android.App;
+using Android.OS;
+using Android.Widget;
+using Android.Content;
 
-namespace BestWeatherEver.Android
+namespace BestWeatherEver.Droid
 {
 	[Activity (Label = "BestWeatherEver", MainLauncher = true, Theme = "@android:style/Theme.Light.NoTitleBar")]
 	public class MainActivity : Activity
@@ -47,7 +45,14 @@ namespace BestWeatherEver.Android
 			TextView locationTextView = FindViewById<TextView> (Resource.Id.locationTextView);
 			locationTextView.Text = "Göteborg";
 
+			ImageButton yrNoImageButton = FindViewById<ImageButton> (Resource.Id.yrNoButton);
+			yrNoImageButton.Touch += delegate
+			{
+				var uri = Android.Net.Uri.Parse ("http://www.yr.no/stad/Sverige/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/");
 
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);  
+			};
 		}
 	}
 }

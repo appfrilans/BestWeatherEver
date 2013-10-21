@@ -8,7 +8,7 @@
     <ProjectGuid>{67F9393E-0398-45E4-BDAC-227F07FFA196}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>BestWeatherEver.Android</RootNamespace>
+    <RootNamespace>BestWeatherEver.Droid</RootNamespace>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -45,6 +45,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -79,6 +80,7 @@
     <AndroidResource Include="Resources\drawable\thermometer.png" />
     <AndroidResource Include="Resources\drawable\thunder.png" />
     <AndroidResource Include="Resources\drawable\wind.png" />
+    <AndroidResource Include="Resources\drawable\Yr_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>
