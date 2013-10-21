@@ -6,6 +6,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using BestWeatherEver.Core;
+using Android.Graphics.Drawables;
 
 namespace BestWeatherEver.Android
 {
@@ -23,17 +24,28 @@ namespace BestWeatherEver.Android
 
 			yrNoManager = new YrNoManager ();
 			WeatherData weatherData = yrNoManager.FetchCurrentWeather ();
-			// Get our button from the layout resource,
-			// and attach an event to it
+
+			//Set weather text
 			TextView weatherTextView = FindViewById<TextView> (Resource.Id.weatherLabel);
 			weatherTextView.Text = weatherData.TypeString ();
 
+			//Set wind text
 			TextView windTextView = FindViewById<TextView> (Resource.Id.windLabel);
 			windTextView.Text = weatherData.WindDirectionString ();
 
+			//Set temperature text
 			TextView temperatureTextView = FindViewById<TextView> (Resource.Id.degreeLabel);
-			temperatureTextView.Text = weatherData.Temperature;
+			temperatureTextView.Text = weatherData.Temperature + "°";
 
+			//Set weather image
+			ImageView weatherImageView = FindViewById<ImageView> (Resource.Id.weatherImageView);
+			String weatherDrawableName = weatherData.GetIconPath ().Replace (".png", "");
+			int weatherResourceId = (int)typeof(Resource.Drawable).GetField (weatherDrawableName).GetValue (null);
+			weatherImageView.SetImageResource (weatherResourceId);
+	
+			//Set location text
+			TextView locationTextView = FindViewById<TextView> (Resource.Id.locationTextView);
+			locationTextView.Text = "Lindholmen";
 		}
 	}
 }

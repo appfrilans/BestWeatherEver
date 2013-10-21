@@ -3,7 +3,9 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="BestWeatherEver/Shared/WeatherData.cs" Line="36" Column="13" />
-      <File FileName="BestWeatherEver.iOS/BestWeatherEver.iOSViewController.cs" Line="34" Column="63" />
+      <File FileName="BestWeatherEver.iOS/BestWeatherEver.iOSViewController.cs" Line="1" Column="1" />
+      <File FileName="BestWeatherEver.Android/MainActivity.cs" Line="22" Column="1" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +15,7 @@
             <Node name="Properties" expanded="True" />
             <Node name="Resources" expanded="True">
               <Node name="drawable" expanded="True">
-                <Node name="fog.png" selected="True" />
+                <Node name="thermometer.png" selected="True" />
               </Node>
               <Node name="layout" expanded="True" />
             </Node>
@@ -38,5 +40,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BestWeatherEver.Android MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.BestWeatherEver.Android MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5554" MonoForAntroid.PreferredTheme="Theme.Holo.Light" />
 </Properties>

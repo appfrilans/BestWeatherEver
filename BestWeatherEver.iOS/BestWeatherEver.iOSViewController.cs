@@ -35,7 +35,7 @@ namespace BestWeatherEver.iOS
 			thermometerImage.Image = UIImage.FromFile ("Climacons/thermometer.png");
 			thermometerLabel.Text = String.Format (@"{0}°", weatherData.Temperature);
 			windImage.Image = UIImage.FromFile ("Climacons/wind.png");
-			windLabel.Text = String.Format (@"{0}", weatherData.WindDirection);
+			windLabel.Text = String.Format (@"{0}", weatherData.WindDirectionString ());
 			weatherLabel.Text = weatherData.TypeString ();
 		}
 
@@ -61,11 +61,6 @@ namespace BestWeatherEver.iOS
 
 		#endregion
 
-		public override bool ShouldAutorotateToInterfaceOrientation (UIInterfaceOrientation toInterfaceOrientation)
-		{
-			// Return true for supported orientations
-			return (toInterfaceOrientation != UIInterfaceOrientation.PortraitUpsideDown);
-		}
 	}
 }
 

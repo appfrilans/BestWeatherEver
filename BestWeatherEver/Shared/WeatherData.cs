@@ -78,33 +78,39 @@ namespace BestWeatherEver.Core
 
 		public String GetClimaconIconPath ()
 		{
+			return "Climacons/" + GetIconPath ();
+		}
+
+		public String GetIconPath ()
+		{
 			switch (Int32.Parse (Type))
 			{
 			case 1:
-				return "Climacons/sun.png";
+				return "sun.png";
 			case 2:
 			case 3:
-				return "Climacons/partly_cloudy.png";
+				return "partly_cloudy.png";
 			case 4:
-				return "Climacons/cloudy.png";
+				return "cloudy.png";
 			case 5:
 			case 6:
 			case 7:
 			case 8:
-				return "Climacons/day_rain.png";
+				return "day_rain.png";
 			case 9:
 			case 10:
 			case 11:
-				return "Climacons/rain.png";
+				return "rain.png";
 			case 12:
 			case 13:
 			case 14:
-				return "Climacons/snow.png";
+				return "snow.png";
 			case 15:
-				return "Climacons/fog.png";
+				return "fog.png";
 			default:
-				return "Climacons/thunder.png";
+				return "thunder.png";
 			}
+
 		}
 	}
 }
