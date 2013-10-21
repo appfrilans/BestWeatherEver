@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.Android", "BestWeatherEver.Android\BestWeatherEver.Android.csproj", "{67F9393E-0398-45E4-BDAC-227F07FFA196}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.Droid", "BestWeatherEver.Android\BestWeatherEver.Droid.csproj", "{67F9393E-0398-45E4-BDAC-227F07FFA196}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestWeatherEver.iOS", "BestWeatherEver.iOS\BestWeatherEver.iOS.csproj", "{C7B8103C-8543-4A67-A737-D969E7CED7B4}"
 EndProject
@@ -76,6 +76,6 @@ Global
 		{C7B8103C-8543-4A67-A737-D969E7CED7B4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = BestWeatherEver.iOS\BestWeatherEver.iOS.csproj
+		StartupItem = BestWeatherEver.Android\BestWeatherEver.Droid.csproj
 	EndGlobalSection
 EndGlobal

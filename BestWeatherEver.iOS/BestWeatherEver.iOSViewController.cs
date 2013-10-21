@@ -15,14 +15,6 @@ namespace BestWeatherEver.iOS
 			yrNoManager = new YrNoManager ();
 		}
 
-		public override void DidReceiveMemoryWarning ()
-		{
-			// Releases the view if it doesn't have a superview.
-			base.DidReceiveMemoryWarning ();
-			
-			// Release any cached data, images, etc that aren't in use.
-		}
-
 		#region View lifecycle
 
 		public override void ViewDidLoad ()
@@ -51,6 +43,11 @@ namespace BestWeatherEver.iOS
 
 			//Set Location Text
 			locationLabel.Text = "Göteborg";
+
+			yrNoButton.TouchUpInside += delegate
+			{
+				UIApplication.SharedApplication.OpenUrl (new NSUrl ("http://www.yr.no/stad/Sverige/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/"));
+			};
 		}
 
 		public override void ViewWillAppear (bool animated)

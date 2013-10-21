@@ -32,42 +32,58 @@ namespace BestWeatherEver.iOS
 
 		[Outlet]
 		MonoTouch.UIKit.UILabel windLabel { get; set; }
-		
+
+		[Outlet]
+		MonoTouch.UIKit.UIButton yrNoButton { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
-			if (thermometerImage != null) {
+			if (locationLabel != null)
+			{
+				locationLabel.Dispose ();
+				locationLabel = null;
+			}
+
+			if (thermometerImage != null)
+			{
 				thermometerImage.Dispose ();
 				thermometerImage = null;
 			}
 
-			if (thermometerLabel != null) {
+			if (thermometerLabel != null)
+			{
 				thermometerLabel.Dispose ();
 				thermometerLabel = null;
 			}
 
-			if (weatherImage != null) {
+			if (weatherImage != null)
+			{
 				weatherImage.Dispose ();
 				weatherImage = null;
 			}
 
-			if (weatherLabel != null) {
+			if (weatherLabel != null)
+			{
 				weatherLabel.Dispose ();
 				weatherLabel = null;
 			}
 
-			if (windImage != null) {
+			if (windImage != null)
+			{
 				windImage.Dispose ();
 				windImage = null;
 			}
 
-			if (windLabel != null) {
+			if (windLabel != null)
+			{
 				windLabel.Dispose ();
 				windLabel = null;
 			}
 
-			if (locationLabel != null) {
-				locationLabel.Dispose ();
-				locationLabel = null;
+			if (yrNoButton != null)
+			{
+				yrNoButton.Dispose ();
+				yrNoButton = null;
 			}
 		}
 	}

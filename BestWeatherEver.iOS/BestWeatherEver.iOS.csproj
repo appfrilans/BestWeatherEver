@@ -57,6 +57,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>full</DebugType>
@@ -128,5 +130,7 @@
     <BundleResource Include="Resources\Climacons\thermometer.png" />
     <BundleResource Include="Resources\Climacons\thunder.png" />
     <BundleResource Include="Resources\Climacons\wind.png" />
+    <BundleResource Include="Resources\Yr-logo.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
 </Project>
