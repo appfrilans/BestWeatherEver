@@ -46,6 +46,8 @@ namespace BestWeatherEver.Android
 			//Set location text
 			TextView locationTextView = FindViewById<TextView> (Resource.Id.locationTextView);
 			locationTextView.Text = "Göteborg";
+
+
 		}
 	}
 }

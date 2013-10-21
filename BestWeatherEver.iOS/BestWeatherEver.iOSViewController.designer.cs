@@ -13,6 +13,9 @@ namespace BestWeatherEver.iOS
 	partial class BestWeatherEver_iOSViewController
 	{
 		[Outlet]
+		MonoTouch.UIKit.UILabel locationLabel { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UIImageView thermometerImage { get; set; }
 
 		[Outlet]
@@ -47,6 +50,11 @@ namespace BestWeatherEver.iOS
 				weatherImage = null;
 			}
 
+			if (weatherLabel != null) {
+				weatherLabel.Dispose ();
+				weatherLabel = null;
+			}
+
 			if (windImage != null) {
 				windImage.Dispose ();
 				windImage = null;
@@ -57,9 +65,9 @@ namespace BestWeatherEver.iOS
 				windLabel = null;
 			}
 
-			if (weatherLabel != null) {
-				weatherLabel.Dispose ();
-				weatherLabel = null;
+			if (locationLabel != null) {
+				locationLabel.Dispose ();
+				locationLabel = null;
 			}
 		}
 	}
