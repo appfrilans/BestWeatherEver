@@ -18,5 +18,14 @@
 	<string>MainStoryboard</string>
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon</string>
+		<string>Icon@2x</string>
+		<string>Icon-120</string>
+		<string>Icon-80</string>
+		<string>Icon-Small@2x</string>
+		<string>Icon-Small</string>
+	</array>
 </dict>
 </plist>
