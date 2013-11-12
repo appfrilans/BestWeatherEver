@@ -4,6 +4,8 @@ using System.IO;
 using System.Xml.Linq;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace BestWeatherEver.Core
 {
@@ -16,9 +18,9 @@ namespace BestWeatherEver.Core
 
 		}
 
-		public WeatherData FetchCurrentWeather ()
+		public async Task<WeatherData> FetchCurrentWeather ()
 		{
-			String xml = fetchXML ();
+			String xml = await fetchXML ();
 			if (xml == null)
 			{
 				return null;
@@ -32,30 +34,30 @@ namespace BestWeatherEver.Core
 			return lastFetchedWeatherData;
 		}
 
-		private String fetchXML ()
+		private async Task<String> fetchXML ()
 		{
-			var request = HttpWebRequest.Create ("http://www.yr.no/place/Sweden/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/forecast.xml");
-			request.ContentType = "application/xml";
-			request.Method = "GET";
+			String url = "http://www.yr.no/place/Sweden/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/forecast.xml";
+			HttpClient request = new HttpClient ();
 
-			using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
+			Task<string> response = request.GetStringAsync (url);
+
+			String content = await response;
+
+			if (response.Status != TaskStatus.RanToCompletion)
 			{
-				if (response.StatusCode != HttpStatusCode.OK)
-					Console.Out.WriteLine ("Error fetching data. Server returned status code: {0}", response.StatusCode);
-				using (StreamReader reader = new StreamReader(response.GetResponseStream()))
-				{
-					var content = reader.ReadToEnd ();
-					if (string.IsNullOrWhiteSpace (content))
-					{
-						Console.Out.WriteLine ("Response contained empty body...");
-						return null;
-					}
-					else
-					{
-						Console.Out.WriteLine ("Response Body: \r\n {0}", content);
-						return content;
-					}
-				}
+				Console.Out.WriteLine ("Error fetching data");
+				return null;
+			}
+
+			if (string.IsNullOrWhiteSpace (content))
+			{
+				Console.Out.WriteLine ("Response contained empty body...");
+				return null;
+			}
+			else
+			{
+				Console.Out.WriteLine ("Response Body: \r\n {0}", content);
+				return content;
 			}
 		}
 

@@ -89,6 +89,7 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

@@ -21,7 +21,20 @@ namespace BestWeatherEver.iOS
 		{
 			base.ViewDidLoad ();
 
-			WeatherData weatherData = yrNoManager.FetchCurrentWeather ();
+			downloadAnPrintWeather ();
+
+			//Set Location Text
+			locationLabel.Text = "Göteborg";
+
+			yrNoButton.TouchUpInside += delegate
+			{
+				UIApplication.SharedApplication.OpenUrl (new NSUrl ("http://www.yr.no/stad/Sverige/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/"));
+			};
+		}
+
+		private async void downloadAnPrintWeather ()
+		{
+			WeatherData weatherData = await yrNoManager.FetchCurrentWeather ();
 
 			//Set Weather Image
 			weatherImage.Image = UIImage.FromFile (weatherData.GetClimaconIconPath ());
@@ -41,33 +54,6 @@ namespace BestWeatherEver.iOS
 			//Set Weather Text
 			weatherLabel.Text = weatherData.TypeString ();
 
-			//Set Location Text
-			locationLabel.Text = "Göteborg";
-
-			yrNoButton.TouchUpInside += delegate
-			{
-				UIApplication.SharedApplication.OpenUrl (new NSUrl ("http://www.yr.no/stad/Sverige/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/"));
-			};
-		}
-
-		public override void ViewWillAppear (bool animated)
-		{
-			base.ViewWillAppear (animated);
-		}
-
-		public override void ViewDidAppear (bool animated)
-		{
-			base.ViewDidAppear (animated);
-		}
-
-		public override void ViewWillDisappear (bool animated)
-		{
-			base.ViewWillDisappear (animated);
-		}
-
-		public override void ViewDidDisappear (bool animated)
-		{
-			base.ViewDidDisappear (animated);
 		}
 
 		#endregion

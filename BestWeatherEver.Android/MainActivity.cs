@@ -5,6 +5,7 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using Android.Content;
+using System.Threading.Tasks;
 
 namespace BestWeatherEver.Droid
 {
@@ -21,7 +22,26 @@ namespace BestWeatherEver.Droid
 			SetContentView (Resource.Layout.Main);
 
 			yrNoManager = new YrNoManager ();
-			WeatherData weatherData = yrNoManager.FetchCurrentWeather ();
+
+			downloadAndPrintWeather ();
+
+			//Set location text
+			TextView locationTextView = FindViewById<TextView> (Resource.Id.locationTextView);
+			locationTextView.Text = "Göteborg";
+
+			ImageButton yrNoImageButton = FindViewById<ImageButton> (Resource.Id.yrNoButton);
+			yrNoImageButton.Touch += delegate
+			{
+				var uri = Android.Net.Uri.Parse ("http://www.yr.no/stad/Sverige/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/");
+
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);  
+			};
+		}
+
+		private async void downloadAndPrintWeather ()
+		{
+			WeatherData weatherData = await yrNoManager.FetchCurrentWeather ();
 
 			//Set weather text
 			TextView weatherTextView = FindViewById<TextView> (Resource.Id.weatherLabel);
@@ -40,19 +60,7 @@ namespace BestWeatherEver.Droid
 			String weatherDrawableName = weatherData.GetIconPath ().Replace (".png", "");
 			int weatherResourceId = (int)typeof(Resource.Drawable).GetField (weatherDrawableName).GetValue (null);
 			weatherImageView.SetImageResource (weatherResourceId);
-	
-			//Set location text
-			TextView locationTextView = FindViewById<TextView> (Resource.Id.locationTextView);
-			locationTextView.Text = "Göteborg";
 
-			ImageButton yrNoImageButton = FindViewById<ImageButton> (Resource.Id.yrNoButton);
-			yrNoImageButton.Touch += delegate
-			{
-				var uri = Android.Net.Uri.Parse ("http://www.yr.no/stad/Sverige/V%C3%A4stra%20G%C3%B6taland/G%C3%B6teborg/");
-
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);  
-			};
 		}
 	}
 }

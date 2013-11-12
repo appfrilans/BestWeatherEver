@@ -46,6 +46,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
